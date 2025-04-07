@@ -9,7 +9,7 @@ function App() {
   const [messages, setMessages] = useState([
     {
       sender: 'bot',
-      text: "Hello! I'm Fabrk. How can I help you today?",
+      text: "Hello! I'm Thred. How can I help you today?",
       timestamp: new Date().toLocaleTimeString(),
       show: false
     }
@@ -51,7 +51,7 @@ function App() {
 
     const loadingMsg = {
       sender: 'bot',
-      text: 'Weaving a response...',
+      text: 'Threading a response...',
       loading: true,
       timestamp: new Date().toLocaleTimeString(),
       show: false
@@ -81,7 +81,7 @@ function App() {
         ...prev.slice(0, -1),
         {
           sender: 'bot',
-          text: "Hmm... couldn't weave that one. Try again?",
+          text: "Hmm... couldn’t thread that one. Try again?",
           timestamp: new Date().toLocaleTimeString(),
           show: false
         }
@@ -112,14 +112,14 @@ function App() {
   return (
     <div className={`root-container ${transitioning ? 'transitioning' : ''} ${showChat ? 'chat-mode' : ''}`}>
       <h1 className={`fabrk-title ${transitioning || showChat ? 'top-left' : 'centered'}`}>
-        Fabrk
+        Thred
       </h1>
 
       {!transitioning && !showChat && (
         <div className="home-content">
-          <p className="home-sub">We didn’t copy. We Fabrk’d</p>
+          <p className="home-sub">We didn’t copy. We Thred’d.</p>
           <button className="home-button" onClick={startTransition}>
-            Let’s Fabrk
+            Let’s Thred
           </button>
         </div>
       )}
