@@ -1,0 +1,12 @@
+# Node (React)
+llama-chat/node_modules/
+llama-chat/.env
+
+# Python (FastAPI)
+llama-backend/venv/
+llama-backend/__pycache__/
+*.pyc
+
+# OS/macOS
+.DS_Store
+Thumbs.db
