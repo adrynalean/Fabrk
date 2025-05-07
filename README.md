@@ -6,67 +6,67 @@ Thred is a sleek, full-stack chatbot interface built on top of Meta's LLaMA 3.2-
 
 ## ✨ Features
 
-- 🎨 Animated React frontend with typing indicator and timestamp reveal
-- 🧠 Backend API powered by LLaMA 3.2-3B via HuggingFace Transformers
-- 🔐 Secrets handled securely using `.env`
-- ⚡ Fast message streaming and async request handling
-- 🎯 Prompt-response flow tested for both factual and conversational prompts
-- 🧼 Clean repo history with GitHub push protection compliance
+- 🎨 Animated React frontend with typing indicator and timestamp reveal  
+- 🧠 Backend API powered by LLaMA 3.2-3B via HuggingFace Transformers  
+- 🔐 Secrets handled securely using `.env`  
+- ⚡ Fast message streaming and async request handling  
+- 🎯 Prompt-response flow tested for both factual and conversational prompts  
+- 🧼 Clean repo history with GitHub push protection compliance  
 
 ## 🧰 Tech Stack
 
-- **Frontend**: React, CSS, Axios
-- **Backend**: FastAPI, Transformers (HuggingFace), Torch
-- **Model**: Meta LLaMA 3.2-3B
-- **Deployment**: Localhost or remote server with SSH tunneling
+- **Frontend**: React, CSS, Axios  
+- **Backend**: FastAPI, Transformers (HuggingFace), Torch  
+- **Model**: Meta LLaMA 3.2-3B  
+- **Deployment**: Localhost or remote server with SSH tunneling  
 
 ## 🚀 Getting Started
 
 ### Backend
-1. Create a virtual environment
+1. Create a virtual environment  
 2. Install dependencies:
    ```bash
    pip install -r requirements.txt
-Add your HuggingFace token in a .env file:
+   ```
+3. Add your HuggingFace token in a `.env` file:
+   ```
+   HF_TOKEN=your_token_here
+   ```
+4. Run the server:
+   ```bash
+   uvicorn main:app --reload
+   ```
 
-ini
-Copy
-Edit
-HF_TOKEN=your_token_here
-Run the server:
+### Frontend
+1. Navigate to the frontend directory:
+   ```bash
+   cd llama-chat
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Start the app:
+   ```bash
+   npm start
+   ```
 
-bash
-Copy
-Edit
-uvicorn main:app --reload
-Frontend
-Navigate to the frontend directory:
+## 🧪 Evaluation
 
-bash
-Copy
-Edit
-cd llama-chat
-Install dependencies:
-
-bash
-Copy
-Edit
-npm install
-Start the app:
-
-bash
-Copy
-Edit
-npm start
-🧪 Evaluation
 Thred was evaluated using manually crafted prompts spanning factual, arithmetic, and conversational domains. Outputs were analyzed for correctness, fluency, and response latency. API stability and UI responsiveness were tested across multiple runs to ensure smooth user interaction.
 
-👥 Team Contributions
-Name	Contributions
-Sashit Vijay	Designed frontend, integrated backend API, handled repo cleanup and deployment, led rebranding from Fabrk to Thred.
-Nathan Komenkul	Developed API server, established SSH tunneling for remote calls, managed asynchronous backend communication.
-Aprajita Gupta	Fine-tuned the LLM using Alpaca-cleaned dataset and LoRA, handled training configuration, prompt formatting, and result validation.
+## 👥 Team Contributions
 
-📄 License
+| Name            | Contributions |
+|-----------------|----------------|
+| **Sashit Vijay** | Designed frontend, integrated backend API, handled repo cleanup and deployment, led rebranding from Fabrk to Thred. |
+| **Nathan Komenkul** | Developed API server, established SSH tunneling for remote calls, managed asynchronous backend communication. |
+| **Aprajita Gupta** | Fine-tuned the LLM using Alpaca-cleaned dataset and LoRA, handled training configuration, prompt formatting, and result validation. |
+
+## 📄 License
+
 This project is for academic/research use only.
 
+---
+
+Made with 💬 by Team Thred
