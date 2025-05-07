@@ -2,7 +2,9 @@
 
 Thred is a sleek, full-stack chatbot interface built on top of Meta's LLaMA 3.2-3B model. It offers a smooth user experience with animated UI transitions and a clean API integration powered by FastAPI.
 
-![Thred Preview](./screenshot.png)
+![Thred Preview]
+![image](https://github.com/user-attachments/assets/1987462c-9371-4f34-b26f-ffa17fdac0c2)
+
 
 ## ✨ Features
 
